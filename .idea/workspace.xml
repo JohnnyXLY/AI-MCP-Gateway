@@ -4,90 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2015481e-cf35-48f1-9397-2d43202f91d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-api/src/main/java/cn/johnnyxly/api/dto/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-api/src/main/java/cn/johnnyxly/api/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-api/src/main/java/cn/johnnyxly/api/response/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/push.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/java/cn/johnnyxly/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/java/cn/johnnyxly/config/GuavaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/java/cn/johnnyxly/config/ThreadPoolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/java/cn/johnnyxly/config/ThreadPoolConfigProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/java/cn/johnnyxly/config/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/java/cn/johnnyxly/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/resources/mybatis/config/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/resources/mybatis/mapper/frame_case_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/test/java/cn/johnnyxly/test/ApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-case/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/adapter/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/adapter/port/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/adapter/repository/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/model/aggregate/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/model/entity/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/model/valobj/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/service/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/yyy/adapter/repository/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/yyy/model/aggregate/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/yyy/model/entity/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/yyy/model/valobj/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/yyy/service/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-infrastructure/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-infrastructure/src/main/java/cn/johnnyxly/infrastructure/adapter/port/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-infrastructure/src/main/java/cn/johnnyxly/infrastructure/adapter/repository/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-infrastructure/src/main/java/cn/johnnyxly/infrastructure/dao/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-infrastructure/src/main/java/cn/johnnyxly/infrastructure/dao/po/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-infrastructure/src/main/java/cn/johnnyxly/infrastructure/gateway/dto/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-infrastructure/src/main/java/cn/johnnyxly/infrastructure/gateway/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-infrastructure/src/main/java/cn/johnnyxly/infrastructure/redis/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-trigger/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-trigger/src/main/java/cn/johnnyxly/trigger/http/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-trigger/src/main/java/cn/johnnyxly/trigger/job/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-trigger/src/main/java/cn/johnnyxly/trigger/listener/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-types/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-types/src/main/java/cn/johnnyxly/types/common/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-types/src/main/java/cn/johnnyxly/types/enums/ResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-types/src/main/java/cn/johnnyxly/types/exception/AppException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/app/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/app/stop.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment-aliyun.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/xfg-frame-archetype.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="2015481e-cf35-48f1-9397-2d43202f91d3" name="Changes" comment="feat: init project">
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/model/valobj/SessionConfigVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/service/ISessionManagementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/service/impl/SessionManagementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/adapter/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/adapter/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/adapter/port/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/adapter/port/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/adapter/repository/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/adapter/repository/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/model/aggregate/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/model/aggregate/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/model/entity/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/model/entity/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/model/valobj/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/service/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/service/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JohnnyXLY&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JohnnyXLY/AI-MCP-Gateway.git&quot;,
+    &quot;accountId&quot;: &quot;c329c0b6-e787-4755-a2be-227f8dc6c1c7&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3Al5nvVe1UMgDBBahmZInAvq34E" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -96,10 +71,12 @@
   "keyToString": {
     "Docker.dev-ops/docker-compose-environment.yml: Compose Deployment.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.ai-mcp-gateway [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "chap01",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/johnnyxly/IdeaProjects/ai-mcp-gateway",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -117,7 +94,9 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="dev-ops/docker-compose-environment.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -130,6 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml: Compose Deployment" />
+        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml: Compose Deployment" />
         <item itemvalue="Docker.dev-ops/docker-compose-environment.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -150,8 +131,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773154486575</updated>
-      <workItem from="1773154487593" duration="547000" />
+      <workItem from="1773154487593" duration="1037000" />
+      <workItem from="1773155533346" duration="1762000" />
+      <workItem from="1773196566891" duration="1729000" />
+      <workItem from="1773198304749" duration="13175000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: init project">
+      <option name="closed" value="true" />
+      <created>1773155086915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773155086915</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,10 +155,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="chap01" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: init project" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: init project" />
   </component>
 </project>
