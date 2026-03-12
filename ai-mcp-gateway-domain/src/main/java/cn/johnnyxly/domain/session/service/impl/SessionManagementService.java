@@ -30,7 +30,7 @@ public class SessionManagementService implements ISessionManagementService {
     public SessionManagementService() {
         // 把 cleanupExpiredSession 方法封装成 Runnable 接口实现类，传给定时调度器
         // 定时调度器开始计时，初始延迟 5 分钟开始执行首次任务
-        // 第一次任务执行完成后，每隔 5 分钟，自动再次执行 cleanupExpiredSession()
+        // 第一次任务执行完成后，每 5 分钟（上一次开始执行后隔 5 分钟），自动再次执行 cleanupExpiredSession()
         cleanupScheduler.scheduleAtFixedRate(this::cleanupExpiredSession, 5, 5, TimeUnit.MINUTES);
         log.info("会话管理服务已启动，会话超时时间: {} 分钟", SESSION_TIMEOUT_MINUTES);
     }
@@ -73,7 +73,7 @@ public class SessionManagementService implements ISessionManagementService {
         // 3. 当前会话进行收尾工作
         SessionConfigVO sessionConfigVO = activeSessions.remove(sessionId);
 
-        if (sessionConfigVO != null) {
+        if (sessionConfigVO == null) {
             return;
         }
 
@@ -102,7 +102,7 @@ public class SessionManagementService implements ISessionManagementService {
         SessionConfigVO sessionConfigVO = activeSessions.get(sessionId);
 
         if (null != sessionConfigVO && sessionConfigVO.isActive()) {
-            sessionConfigVO.updateLastAccessTime();
+            sessionConfigVO.updateLastAccessedTime();
             return sessionConfigVO;
         }
 
@@ -114,21 +114,21 @@ public class SessionManagementService implements ISessionManagementService {
         int cleanedCount = 0;
 
         // 清理过期会话执行的操作
-        // 1. 找出所有的过期会话（过期会话指会话处于非活跃态并且超时）
+        // 1. 找出所有的待删除会话（非活跃或超时）
         // 2. 执行删除
         for (Map.Entry<String, SessionConfigVO> entry : activeSessions.entrySet()) {
             // 获取会话
             SessionConfigVO sessionConfigVO = entry.getValue();
 
-            // 删除的条件：非活跃态并且超时
-            if (!sessionConfigVO.isActive() && sessionConfigVO.isExpired(SESSION_TIMEOUT_MINUTES)) {
+            // 删除的条件：非活跃态或超时
+            if (!sessionConfigVO.isActive() || sessionConfigVO.isExpired(SESSION_TIMEOUT_MINUTES)) {
                 removeSession(sessionConfigVO.getSessionId());
                 cleanedCount ++ ;
             }
+        }
 
-            if (cleanedCount > 0) {
-                log.info("清理了 {} 个过期会话，剩余活跃会话数: {}", cleanedCount, activeSessions.size());
-            }
+        if (cleanedCount > 0) {
+            log.info("清理了 {} 个过期会话，剩余活跃会话数: {}", cleanedCount, activeSessions.size());
         }
     }
 

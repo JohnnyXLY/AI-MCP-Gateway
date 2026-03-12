@@ -46,7 +46,7 @@ public class SessionConfigVO {
      * 网关内部有多个线程会对此变量进行监测（如消息推送线程、心跳监测线程、过期清理线程）
      * 要保证多线程下的可见性，因而使用volatile
      */
-    private volatile Instant lastAccessTime;
+    private volatile Instant lastAccessedTime;
 
     /**
      * 当前会话活跃状态
@@ -58,7 +58,7 @@ public class SessionConfigVO {
         this.sessionId = sessionId;
         this.sink = sink;
         this.createTime = Instant.now();
-        this.lastAccessTime = Instant.now();
+        this.lastAccessedTime = Instant.now();
         this.active = true;
     }
 
@@ -72,8 +72,8 @@ public class SessionConfigVO {
     /**
      * 更新会话最后访问时间
      */
-    public void updateLastAccessTime() {
-        this.lastAccessTime = Instant.now();
+    public void updateLastAccessedTime() {
+        this.lastAccessedTime = Instant.now();
     }
 
     /**
@@ -82,6 +82,6 @@ public class SessionConfigVO {
      * @return 是否超时
      */
     public boolean isExpired(long timeoutMinutes) {
-        return lastAccessTime.isBefore(Instant.now().minus(timeoutMinutes, ChronoUnit.MINUTES));
+        return lastAccessedTime.isBefore(Instant.now().minus(timeoutMinutes, ChronoUnit.MINUTES));
     }
 }

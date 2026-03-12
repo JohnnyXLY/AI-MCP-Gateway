@@ -40,6 +40,12 @@
             <groupId>cn.johnnyxly</groupId>
             <artifactId>ai-mcp-gateway-domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>cn.johnnyxly</groupId>
+            <artifactId>ai-mcp-gateway-case</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>

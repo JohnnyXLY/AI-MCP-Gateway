@@ -4,19 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2015481e-cf35-48f1-9397-2d43202f91d3" name="Changes" comment="feat: init project">
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/model/valobj/SessionConfigVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/service/ISessionManagementService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/service/impl/SessionManagementService.java" afterDir="false" />
+    <list default="true" id="2015481e-cf35-48f1-9397-2d43202f91d3" name="Changes" comment="feat: chap01-会话管理服务实现">
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-api/src/main/java/cn/johnnyxly/api/IMcpGatewayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/java/cn/johnnyxly/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-case/src/main/java/cn/johnnyxly/cases/mcp/AbstractMcpSessionSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-case/src/main/java/cn/johnnyxly/cases/mcp/IMcpMessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-case/src/main/java/cn/johnnyxly/cases/mcp/IMcpSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-case/src/main/java/cn/johnnyxly/cases/mcp/McpSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-case/src/main/java/cn/johnnyxly/cases/mcp/session/factory/DefaultMcpSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-case/src/main/java/cn/johnnyxly/cases/mcp/session/node/EndNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-case/src/main/java/cn/johnnyxly/cases/mcp/session/node/RootNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-case/src/main/java/cn/johnnyxly/cases/mcp/session/node/SessionNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-case/src/main/java/cn/johnnyxly/cases/mcp/session/node/VerifyNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-mcp-gateway-trigger/src/main/java/cn/johnnyxly/trigger/http/McpGatewayController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/adapter/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/adapter/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/adapter/port/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/adapter/port/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/adapter/repository/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/adapter/repository/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/model/aggregate/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/model/aggregate/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/model/entity/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/model/entity/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/model/valobj/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/xxx/service/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/service/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/java/cn/johnnyxly/config/ThreadPoolConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/java/cn/johnnyxly/config/ThreadPoolConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-case/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-case/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/model/valobj/SessionConfigVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/model/valobj/SessionConfigVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/service/impl/SessionManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-domain/src/main/java/cn/johnnyxly/domain/session/service/impl/SessionManagementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-mcp-gateway-trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-mcp-gateway-trigger/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
+        <option value="module-info" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -56,6 +66,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -72,20 +85,41 @@
     "Docker.dev-ops/docker-compose-environment.yml: Compose Deployment.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.ai-mcp-gateway [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "chap01",
+    "Spring Boot.Application.executor": "Run",
+    "git-widget-placeholder": "chap02",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/johnnyxly/IdeaProjects/ai-mcp-gateway",
+    "last_opened_file_path": "/Users/johnnyxly/IdeaProjects/ai-mcp-gateway/ai-mcp-gateway-app/src/main/java/cn/johnnyxly/config",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.17701149",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Docker.dev-ops/docker-compose-environment.yml: Compose Deployment">
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ai-mcp-gateway-app/src/main/java/cn/johnnyxly/config" />
+      <recent name="$PROJECT_DIR$/ai-mcp-gateway-case/src/main/java/cn/johnnyxly/cases/mcp/session/node" />
+      <recent name="$PROJECT_DIR$/ai-mcp-gateway-case/src/main/java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.johnnyxly.cases.mcp.session.factory" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ai-mcp-gateway-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.johnnyxly.Application" />
@@ -135,6 +169,9 @@
       <workItem from="1773155533346" duration="1762000" />
       <workItem from="1773196566891" duration="1729000" />
       <workItem from="1773198304749" duration="13175000" />
+      <workItem from="1773286977182" duration="1718000" />
+      <workItem from="1773288707435" duration="953000" />
+      <workItem from="1773289667792" duration="18401000" />
     </task>
     <task id="LOCAL-00001" summary="feat: init project">
       <option name="closed" value="true" />
