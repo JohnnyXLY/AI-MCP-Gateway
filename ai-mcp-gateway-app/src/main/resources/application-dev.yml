@@ -32,6 +32,14 @@ spring:
     connection-test-query: SELECT 1
   type: com.zaxxer.hikari.HikariDataSource
 
+  ai:
+    openai:
+      base-url: https://apis.itedus.cn
+      api-key: sk-SmiUYiG7oDNoZLnb5b6487F10c1c4d6a83Cc98416d38EbAf
+      chat:
+        options:
+          model: gpt-4
+
 # MyBatis 配置【如需使用记得打开】
 #mybatis:
 #  mapper-locations: classpath:/mybatis/mapper/*.xml

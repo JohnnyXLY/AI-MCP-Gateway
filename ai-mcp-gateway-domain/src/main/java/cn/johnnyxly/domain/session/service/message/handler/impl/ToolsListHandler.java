@@ -1,0 +1,21 @@
+package cn.johnnyxly.domain.session.service.message.handler.impl;
+
+import cn.johnnyxly.domain.session.model.valobj.McpSchemaVO;
+import cn.johnnyxly.domain.session.service.message.handler.IRequestHandler;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+
+/**
+ * 返回服务器支持的工具列表
+ */
+
+@Slf4j
+@Service("toolsListHandler")
+public class ToolsListHandler implements IRequestHandler {
+
+    @Override
+    public McpSchemaVO.JSONRPCResponse handle(McpSchemaVO.JSONRPCRequest message) {
+        return null;
+    }
+
+}
